@@ -1,0 +1,367 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0F2D25;
+  color: #EFE9DC;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 48px 32px;
+}
+
+/* ---------- Header ---------- */
+.header {
+  max-width: 1360px;
+  margin: 0 auto 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-right {
+  justify-content: flex-end;
+}
+
+.nav a {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #EFE9DC;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #C7A862;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #EFE9DC;
+  text-decoration: none;
+}
+
+.logo svg {
+  width: 60px;
+  fill: none;
+  stroke: #EFE9DC;
+  stroke-width: 3.5;
+}
+
+.logo .cover {
+  fill: #0F2D25;
+}
+
+.logo-name {
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.logo-sub {
+  font-size: 10px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+
+.hero-text {
+  flex: 1 1 480px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: #C7A862;
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: clamp(56px, 8vw, 120px);
+  line-height: 0.92;
+  margin: 0;
+  font-size: 120px;
+  margin-top: 60px;
+}
+
+h1 em {
+  color: #C7A862;
+}
+
+.intro {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #B8B3A6;
+  max-width: 420px;
+  margin: 40px 0 48px;
+}
+
+.btn {
+  color: #EFE9DC;
+  text-decoration: none;
+  border-bottom: 1px solid #C7A862;
+  padding-bottom: 8px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.hero-art {
+  flex: 1 1 440px;
+  min-height: 640px;
+  background: radial-gradient(circle at 50% 40%, #1B4A3C, #0F2D25 70%);
+  border: 1px solid #2A5A4B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-art svg {
+  width: 400px;
+  fill: none;
+  stroke: #C7A862;
+  stroke-width: 1.3;
+}
+
+.hero-art .cover {
+  fill: #0F2D25;
+}
+
+/* ---------- Shop ---------- */
+.shop {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.shop-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: clamp(40px, 5.5vw, 76px);
+  margin: 0 0 64px;
+}
+
+.shop-title em {
+  color: #C7A862;
+}
+
+.grid {
+  display: flex;
+  gap: 28px;
+}
+
+.card {
+  flex: 1;
+  display: block;
+  color: #EFE9DC;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.card-img {
+  width: 100%;
+  height: 420px;
+  background: #12362C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img svg {
+  width: 150px;
+  fill: none;
+  stroke: #C7A862;
+  stroke-width: 1.3;
+}
+
+.card-name {
+  font-family: 'Fraunces', serif;
+  font-size: 24px;
+  padding-top: 22px;
+}
+
+.card-price {
+  color: #B8B3A6;
+  font-size: 14px;
+  padding-top: 6px;
+}
+
+/* On phones, stack the cards */
+@media (max-width: 700px) {
+  .grid {
+    flex-direction: column;
+  }
+}
+
+/* ---------- Signature ---------- */
+.signature {
+  background: #EFE9DC;
+  color: #0B1F19;
+  margin: 0 -32px;
+  padding: 100px 32px;
+}
+
+.signature-inner {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+
+.signature-img {
+  flex: 1 1 400px;
+  min-height: 560px;
+  background: #DCD3BF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px ;
+}
+
+.signature-img svg {
+  width: 320px;
+  fill: none;
+  stroke: #0F2D25;
+  stroke-width: 1.3;
+}
+
+.signature-text {
+  flex: 1 1 420px;
+}
+
+.sig-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: #7A5F2A;
+  margin: 0 0 28px;
+}
+
+.signature h2 {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: clamp(40px, 5vw, 68px);
+  line-height: 1.02;
+  margin: 0 0 32px;
+}
+
+.sig-desc {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #3B4A44;
+  max-width: 480px;
+  margin: 0 0 40px;
+}
+
+.specs {
+  border-top: 1px solid #B9AE95;
+  max-width: 480px;
+}
+
+.spec {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+  border-bottom: 1px solid #B9AE95;
+  font-size: 14px;
+}
+
+.add-btn {
+  display: inline-block;
+  margin-top: 40px;
+  background: #0F2D25;
+  color: #EFE9DC;
+  padding: 18px 44px;
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* ---------- Atelier ---------- */
+.craft {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.craft-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: #C7A862;
+  margin: 0 0 28px;
+}
+
+.craft h2 {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: clamp(40px, 5.5vw, 76px);
+  line-height: 1.02;
+  max-width: 760px;
+  margin: 0 0 72px;
+}
+
+.craft-cols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+
+.craft-col {
+  flex: 1 1 260px;
+  border-top: 1px solid #2A5A4B;
+  padding-top: 28px;
+  margin-right:8px;
+}
+
+.num {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  color: #C7A862;
+}
+
+.craft-col h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: 28px;
+  margin: 14px 0;
+}
+
+.craft-col p {
+  margin: 0;
+  line-height: 1.8;
+  color: #B8B3A6;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
