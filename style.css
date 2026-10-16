@@ -37,6 +37,8 @@ body {
   text-transform: uppercase;
   color: #EFE9DC;
   text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 20px;
 }
 
 .nav a:hover {
@@ -364,4 +366,174 @@ h1 em {
   height: 100%;
   object-fit: contain;
   display: block;
+}
+
+/* ---------- Quote ---------- */
+.quote {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+  border-top: 1px solid #24493D;
+  border-bottom: 1px solid #24493D;
+}
+
+.quote-text {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.3;
+  margin: 0 0 32px;
+}
+
+.quote-name {
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #C7A862;
+  margin: 0;
+}
+
+/* ---------- Signup ---------- */
+.signup {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.signup-text {
+  flex: 1 1 420px;
+}
+
+.signup h2 {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1.05;
+  margin: 0 0 20px;
+}
+
+.signup h2 em {
+  color: #C7A862;
+}
+
+.signup-text p {
+  color: #B8B3A6;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.signup-form {
+  flex: 1 1 420px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.signup-form input {
+  flex: 1 1 260px;
+  min-height: 56px;
+  padding: 0 22px;
+  background: transparent;
+  border: 1px solid #2A5A4B;
+  color: #EFE9DC;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+}
+
+.signup-form button {
+  min-height: 56px;
+  padding: 0 40px;
+  background: #C7A862;
+  color: #0B1F19;
+  border: 0;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.sr-only {
+  position: absolute;
+  left: -9999px;
+}
+
+/* ---------- Phones and small tablets ---------- */
+@media (max-width: 800px) {
+
+  body {
+    padding: 24px 20px;
+  }
+
+  /* Header: logo on top, menus underneath */
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .logo {
+    order: -1;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav,
+  .nav-right {
+    flex: 1 1 auto;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* Hero */
+  .hero {
+    gap: 40px;
+  }
+
+  .hero-art {
+    min-height: 420px;
+  }
+
+  .hero-art svg {
+    width: 70%;
+  }
+
+  /* Shop: cards stack */
+  .shop,
+  .craft,
+  .signup {
+    padding: 64px 0;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+
+  /* Signature */
+  .signature {
+    margin: 0 -20px;
+    padding: 64px 20px;
+  }
+
+  .signature-img {
+    min-height: 380px;
+  }
+
+  .signature-img svg {
+    width: 70%;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    gap: 32px;
+  }
 }
